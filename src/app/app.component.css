@@ -1,0 +1,15 @@
+.spacer{
+    flex:1 1 auto;
+}
+
+.navOptionsFormatter{
+    margin-right:1rem;
+    cursor: pointer;
+}
+
+.brandNameFormatter{
+    color: yellow;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    cursor: pointer;
+}
