@@ -1,4 +1,10 @@
-p{
+.p-title{
     text-align: center;
     margin-top: 2rem  !important;
+}
+
+.mat-card-formatter{
+    max-width: 400px;
+    margin: 2rem;
+    float:left;
 }

@@ -1,0 +1,14 @@
+.p-title{
+    text-align: center;
+    margin-top: 2rem  !important;
+}
+
+.footer-formatter{
+    margin-left: -7px !important;
+    font-size: 12px !important;
+    font-weight: bold !important;
+}
+
+.header-formatter{
+    margin-left:-15px !important;
+}

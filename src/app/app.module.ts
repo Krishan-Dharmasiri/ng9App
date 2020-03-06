@@ -14,6 +14,7 @@ import { AppComponent } from './app.component';
 import { RegressionanalysisComponent } from './components/regressionanalysis/regressionanalysis.component';
 import { HomeComponent } from './components/home/home.component';
 import { AboutComponent } from './components/about/about.component';
+import { RegressionTestResultComponent } from './components/regression-test-result/regression-test-result.component';
 
 
 const routes  = [
@@ -28,7 +29,8 @@ const routes  = [
     AppComponent,
     RegressionanalysisComponent,
     HomeComponent,
-    AboutComponent
+    AboutComponent,
+    RegressionTestResultComponent
     
   ],
   imports: [
