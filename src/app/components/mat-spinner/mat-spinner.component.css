@@ -1,0 +1,8 @@
+.mat-spinner-formatter{
+    text-align: center;
+}
+
+.mat-spinner-formatter p{
+    color: red;
+    font-weight: bold;
+}

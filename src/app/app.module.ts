@@ -15,6 +15,7 @@ import { RegressionanalysisComponent } from './components/regressionanalysis/reg
 import { HomeComponent } from './components/home/home.component';
 import { AboutComponent } from './components/about/about.component';
 import { RegressionTestResultComponent } from './components/regression-test-result/regression-test-result.component';
+import { MatSpinnerComponent } from './components/mat-spinner/mat-spinner.component';
 
 
 const routes  = [
@@ -30,7 +31,8 @@ const routes  = [
     RegressionanalysisComponent,
     HomeComponent,
     AboutComponent,
-    RegressionTestResultComponent
+    RegressionTestResultComponent,
+    MatSpinnerComponent
     
   ],
   imports: [
