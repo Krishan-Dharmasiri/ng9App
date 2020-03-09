@@ -22,7 +22,8 @@ export class RegressionTestResultComponent implements OnInit {
     // Call the service that calls the back end API to get data
     // While you get the data, the spinner should spin
     // Here I mock that with the below function.
-    const spinnerDialogRef = this.dialog.open(MatSpinnerComponent);
+    let loadingMessage : string = 'Test Running ...';
+    const spinnerDialogRef = this.dialog.open(MatSpinnerComponent, {data : loadingMessage});
    
     setTimeout(()=> {
       //Wait for 5 seconds and close the spinner

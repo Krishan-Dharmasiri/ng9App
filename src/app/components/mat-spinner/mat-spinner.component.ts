@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Inject } from '@angular/core';
+import { MatDialogRef, MAT_DIALOG_DATA, MatDialog } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-mat-spinner',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MatSpinnerComponent implements OnInit {
 
-  constructor() { }
+  constructor(private dialogRef : MatDialogRef<MatSpinnerComponent>, @Inject(MAT_DIALOG_DATA) public progressMessage : string) { }
 
   ngOnInit(): void {
   }
