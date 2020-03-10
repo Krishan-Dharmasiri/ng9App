@@ -64,6 +64,7 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
             "browserTarget": "ng9AppOne:build"
+            
           },
           "configurations": {
             "production": {
