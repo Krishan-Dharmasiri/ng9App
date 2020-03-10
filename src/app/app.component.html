@@ -5,24 +5,29 @@
     <span class="navOptionsFormatter" mat-button [matMenuTriggerFor]="services">Services</span>
     <span class="navOptionsFormatter" routerLink="/about">About</span>
     <span class="navOptionsFormatter">Log in</span>
-    
   </div>
-
 </mat-toolbar>
 
 <mat-menu #services="matMenu">
-  <button mat-menu-item [matMenuTriggerFor]="Analytics">Analytics</button>
-  <button mat-menu-item [matMenuTriggerFor]="Research">Research</button>
-</mat-menu>
+    <button mat-menu-item [matMenuTriggerFor]="Analytics">Analytics</button>
+    <button mat-menu-item [matMenuTriggerFor]="Research">Research</button>
+  </mat-menu>
+  
+  <mat-menu #Analytics="matMenu">
+    <button mat-menu-item routerLink="/regression">Regeression Analysis</button>
+    <button mat-menu-item>Cluster Analysis</button>
+  </mat-menu>
+  
+  <mat-menu #Research="matMenu">
+    <button mat-menu-item>Machine Learning</button>
+    <button mat-menu-item>Deep Learning</button>
+  </mat-menu>
 
-<mat-menu #Analytics="matMenu">
-  <button mat-menu-item routerLink="/regression">Regeression Analysis</button>
-  <button mat-menu-item>Cluster Analysis</button>
-</mat-menu>
+<mat-drawer-container>
+  <mat-drawer mode="side" opened></mat-drawer>
+  <mat-drawer-content>
+      <router-outlet></router-outlet>
+  </mat-drawer-content>
+</mat-drawer-container>
 
-<mat-menu #Research="matMenu">
-  <button mat-menu-item>Machine Learning</button>
-  <button mat-menu-item>Deep Learning</button>
-</mat-menu>
-
-<router-outlet></router-outlet>
+<app-footer></app-footer>

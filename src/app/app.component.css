@@ -13,3 +13,7 @@
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     cursor: pointer;
 }
+
+mat-drawer-container{
+    height:100%;
+}

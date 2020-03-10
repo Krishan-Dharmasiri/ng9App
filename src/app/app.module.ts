@@ -5,6 +5,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { RouterModule} from '@angular/router';
 
 import { MaterialModule } from './modules/material/material.module';
+import { SharedModule } from './modules/shared/shared.module';
 
 import { AppRoutingModule } from './app-routing.module';
 
@@ -41,7 +42,9 @@ const routes  = [
     AppRoutingModule,
     HttpClientModule,
     BrowserAnimationsModule,
-    MaterialModule
+    SharedModule,
+    MaterialModule,
+
     
   ],
   providers: [],
